@@ -2,6 +2,8 @@ set -e -x
 
 clear
 
+sudo rm -rf ~/ozzo-vpn
+
 sudo apt-get update
 sudo apt-get upgrade -y
 sudo apt-get install git -y
