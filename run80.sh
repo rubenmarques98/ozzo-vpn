@@ -1,1 +1,1 @@
-sh ./run.sh 80
+sudo sh ~/run.sh 80

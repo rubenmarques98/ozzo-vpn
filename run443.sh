@@ -1,1 +1,1 @@
-sh ./run.sh 443
+sudo sh ~/run.sh 443
