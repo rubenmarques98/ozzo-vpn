@@ -2,7 +2,7 @@ set -e -x
 
 clear
 
-sudo rm -rf ~/ozzo-vpn
+sudo rm -rf ~/
 
 sudo apt-get update
 sudo apt-get upgrade -y
