@@ -1,8 +1,6 @@
-sudo cp -r ~/ozzo-vpn/* ~/
-
 sudo apt install libboost-dev libboost-log-dev libboost-program-options-dev libssl-dev \
                  cmake \
-                 g++
+                 g++ -y
 
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release \
                     -DENABLE_SYSTEMD=ON \
