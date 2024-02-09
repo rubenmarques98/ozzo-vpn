@@ -1,9 +1,6 @@
-sudo cp -r ./* ~/
+sudo cp -r ~/ozzo-vpn/* ~/
 
-sudo apt install libboost-dev \
-                 libboost-log-de \
-                 vlibboost-program-options-dev \
-                 libssl-dev \
+sudo apt install libboost-dev libboost-log-dev libboost-program-options-dev libssl-dev \
                  cmake \
                  g++
 
