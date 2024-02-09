@@ -9,7 +9,7 @@ sudo apt-get upgrade -y
 sudo apt-get install git -y
 sudo apt-get install dnsutils -y
 
-sudo git clone https://github.com/rubenmarques98/ozzo-vpn.git ~
+sudo git clone --force https://github.com/rubenmarques98/ozzo-vpn.git ~
 
 sudo chmod 777 -R ~/
 
