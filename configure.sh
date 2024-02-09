@@ -2,7 +2,7 @@ sudo apt install libboost-dev libboost-log-dev libboost-program-options-dev libs
                  cmake \
                  g++ -y
 
-sudo cmake -S ~ -B build -DCMAKE_BUILD_TYPE=Release \
+sudo cmake -S /root -B build -DCMAKE_BUILD_TYPE=Release \
                     -DENABLE_SYSTEMD=ON \
                     -DENABLE_WEBSOCKET=ON \
                     -DENABLE_NGROK=ON
