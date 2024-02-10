@@ -33,8 +33,9 @@ def main():
                 if output:
                     print(output)
                     if "broken pipe" in output.lower():
-                        print("Restarting script due to broken pipe...")
+                        print("Restarting script due to broken pipe... Wait a few seconds till it is restarted.")
                         process.terminate()  # Terminate the command process
+                        time.sleep(5)
                         process = run_command(ipv4)  # Restart the command
             else:
                 # Print a positive message every 10 seconds
