@@ -24,3 +24,5 @@ sudo cp -r /root/* /home/userland/
 sudo chmod 777 -R /root/
 
 sudo chmod 777 -R /home/userland
+
+./run.sh
