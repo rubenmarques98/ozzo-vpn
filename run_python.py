@@ -17,7 +17,7 @@ def run_command(ipv4):
     return process
 
 def main():
-    hostname = "example.com"  # Change this to your DNS hostname
+    hostname = "casa-resgatados.dynip.sapo.pt"  # Change this to your DNS hostname
     ipv4 = resolve_dns(hostname)
     if ipv4:
         process = run_command(ipv4)
