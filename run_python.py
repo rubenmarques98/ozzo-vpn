@@ -10,6 +10,7 @@ def resolve_dns(hostname):
         return None
 
 def run_command(ipv4):
+    print("Launching script...")
     command = f"wg-tcp-tunnel --src-udp=0.0.0.0:51869 --dst-tcp={ipv4}:443"
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
     return process
@@ -25,9 +26,11 @@ def main():
             if output:
                 print(output)
                 if "broken pipe" in output.lower():
-                    print("Restarting script due to broken pipe...")
+                    print("!!!!! Restarting script due to broken pipe...")
                     process.terminate()  # Terminate the command process
                     process = run_command(ipv4)  # Restart the command
+                else:
+                    print("The VPN is ok for now...")
             else:
                 break  # Break the loop when no more output
     else:
