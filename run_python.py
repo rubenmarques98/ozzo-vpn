@@ -2,6 +2,8 @@ import subprocess
 import socket
 import select
 import time
+from datetime import datetime
+
 
 def resolve_dns(hostname):
     try:
@@ -37,7 +39,8 @@ def main():
             else:
                 # Print a positive message every 10 seconds
                 if time.time() - last_positive_message_time >= 30:
-                    print("The VPN is working fine.")
+                    current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+                    print(f"{current_time} The VPN is working fine.")
                     last_positive_message_time = time.time()
     else:
         print("Failed to resolve DNS. Exiting.")
