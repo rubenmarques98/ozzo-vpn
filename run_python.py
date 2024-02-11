@@ -32,7 +32,7 @@ def main():
                 output = process.stderr.readline().strip()
                 if output:
                     print(output)
-                    if "broken pipe" in output.lower():
+                    if "broken pipe" in output.lower() or "aborted" in output.lower():
                         print("Restarting script due to broken pipe... Wait a few seconds till it is restarted.")
                         process.kill()  # Terminate the command process
                         time.sleep(5)
